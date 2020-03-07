@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="../header.css" rel="stylesheet">
+        <link href="../index.css" rel="stylesheet">
+        <link href="../App.css" rel="stylesheet">
+        <link href="../css/home.css" rel="stylesheet">
+        <link rel="icon" href="../../../assets/qmix-icon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mate&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <!--You can go to Google Fonts and insert your own font here-->
+        <title>QMIX &#8226; Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(window).scroll(function () {
+                var s = $(window).scrollTop(),
+                        d = $(document).height(),
+                        c = $(window).height();
+                        scrollPercent = (s / (d-c)) * 100;
+                        var position = scrollPercent/50;
+                        console.log(position)
+                $("#titlebar").attr('style', "background: rgba(0, 0, 0, " + position + ");");
+                $("#logo").attr('style', "opacity: " + position + ";");
+            });
+        </script>
+        <meta
+            name="description"
+            content="Web site created for QMIX"
+        />
+    </head>
+    <body>
+        <div class="home">
+            <div class="black">
+                <div class ="titlebar" id="titlebar">
+                    <img id="logo" src="../../../assets/logo.svg">
+                    <div class="nav">
+                        <div class="box active" >
+                            <a class= "link" href="Home.html">Home</a>
+                            <div class="dot active">&#8226;</div>
+                        </div>
+                        <div class="box" >
+                            <a class= "link" href="Resume.html">About</a>
+                            <div class="dot">&#8226;</div>
+                        </div>
+                        <div class="box">
+                            <a class= "link" href="#Contact">Alumini</a>
+                            <div class="dot">&#8226;</div>
+                        </div>
+                        <div class="box">
+                            <a class= "link" href="" target="_blank">Contact</a>
+                            <div class="dot">&#8226;</div>
+                        </div>
+                        <div class=" socials">
+                            <a class= "link social" href="" target="_blank"><img src="../../../assets/facebook%203.svg"></a>
+                            <div class="">&#8226;</div>
+                            <a class= "link social" href="" target="_blank"><img src="../../../assets/facebook%202.svg"></a>
+                            <div class="">&#8226;</div>
+                            <a class= "link social" href="" target="_blank"><img src="../../../assets/facebook%201.svg"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <img class="homeLogo" src="../../../assets/logo.svg">
+                <div class="intro">
+                    <h1 class="title">Queen's Social Club</h1>
+                    <div style="float:left; margin-top:-20px;">
+                    <div style="border: 3px solid #004C6D;float:left;width:100px;"></div>
+                    <div style="border: 3px solid #F4BD16;float:left;width:100px;"></div>
+                    <div style="border: 3px solid #B40202;float:left;width:100px;"></div>
+                    </div>
+                    <p class="intro">A new social club at Queen's University that aims to provide a welcoming 
+                    space for all students. Follow our instagram and like our facebook page to stay 
+                    tuned about all the fun events coming this fall.</p>
+                    <br>
+                    <button class="info">
+                        <a class="info" href="">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div style="height:2000px;margin:auto;display:flex;">
+                <img class="welcomeLogo" src="../../../assets/logo.svg">
+                <div class="welcome">
+                    <h1 class="title">Welcoming Space</h1>
+                    <div style="float:left; margin-top:-40px;">
+                    <div style="border: 3px solid #004C6D;float:left;width:100px;"></div>
+                    <div style="border: 3px solid #F4BD16;float:left;width:100px;"></div>
+                    <div style="border: 3px solid #B40202;float:left;width:100px;"></div>
+                    </div>
+                    <p class="welcome">A new social club at Queen's University … that aims to 
+                    provide a welcoming space for all students. Follow our instagram and 
+                    like our facebook page to stay tuned about all the fun events coming 
+                    this fall.</p>
+                    <button class="instagram">
+                        <a class="info" href="">Instagram<img class="button" src="../../../assets/facebook%202.svg"></a>
+                    </button>
+                </div>
+            </div>
+        </div>      
+</body>
+</html>
