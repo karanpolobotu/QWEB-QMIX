@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="../header.css" rel="stylesheet">
+    <link href="../index.css" rel="stylesheet">
+    <link href="../App.css" rel="stylesheet">
+    <link href="../css/events.css" rel="stylesheet">
+    <link rel="icon" href="../../../assets/qmix-icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <!--You can go to Google Fonts and insert your own font here-->
+    <title>QMIX &#8226; Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var s = $(window).scrollTop(),
+                d = $(document).height(),
+                c = $(window).height();
+            scrollPercent = (s / (d - c)) * 100;
+            var position = scrollPercent / 50;
+            console.log(position)
+            $("#titlebar").attr('style', "background: rgba(0, 0, 0, " + position + ");");
+            $("#logo").attr('style', "opacity: " + position + ";");
+        });
+    </script>
+    <meta name="description" content="Web site created for QMIX" />
+</head>
+
+<body>
+    <div class="container">
+        <div style="height:2000px;margin:auto;display:flex;">
+            <div class="events">
+                <h1 class="title">Past Events</h1>
+                <div style="padding: 15px; margin: 0 auto; display: inline-block; ">
+                    <div style="background: #004C6D; border: 3px solid #004C6D;float:left;width:100px;"></div>
+                    <div style="background: #F4BD16; border: 3px solid #F4BD16;float:left;width:100px;"></div>
+                    <div style="background: #B40202; border: 3px solid #B40202;float:left;width:100px;"></div>
+                </div>
+                <p class="events">We host social events for like-minded students! Here are some of our past club events. More to come!</p>
+                <button class="facebook">
+                    <a class="info" href="https://www.facebook.com/pg/QUMIX/events/?ref=page_internal">Facebook Events<img class="button" src="../../../assets/facebook%201.svg"></a>
+                </button>
+
+
+                <div class="event-grid-container">
+                    <div class="event-card">
+                        <div class="event-bg-img">
+                            <img class="event-img" src="../../../assets/porchevent.jpg"/>
+                        </div>
+                        <div class="event-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="events">Content....</p> <button>Readmore</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-bg-img">
+                            <img class="event-img" src="../../../assets/porchevent.jpg"/>
+                        </div>
+                        <div class="event-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="events">Content....</p> <button>Readmore</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-bg-img">
+                            <img class="event-img" src="../../../assets/porchevent.jpg"/>
+                        </div>
+                        <div class="event-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="events">Content....</p> <button>Readmore</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-bg-img">
+                            <img class="event-img" src="../../../assets/porchevent.jpg"/>
+                        </div>
+                        <div class="event-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="events">Content....</p> <button>Readmore</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-bg-img">
+                            <img class="event-img" src="../../../assets/porchevent.jpg"/>
+                        </div>
+                        <div class="event-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="events">Content....</p> <button>Readmore</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-bg-img">
+                            <img class="event-img" src="../../../assets/porchevent.jpg"/>
+                        </div>
+                        <div class="event-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="events">Content....</p> <button>Readmore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
