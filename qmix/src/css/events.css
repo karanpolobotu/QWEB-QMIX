@@ -1,4 +1,4 @@
-  ::-webkit-scrollbar{
+::-webkit-scrollbar{
     display: none;
   }
 
@@ -290,6 +290,11 @@
     border: none;
     outline:none;
     -webkit-transition: all .3s ease-in-out;
+  }
+
+
+  button.facebook:hover{
+      background: rgba(0, 76, 109, 0.904);
   }
   
   button.instagram:hover{
